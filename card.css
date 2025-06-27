@@ -17,7 +17,6 @@
 
 .team-img{
 
-    
     background-image: url(Images/Mauricio.jpg);
     object-fit: cover;
     background-position: center;
@@ -56,7 +55,5 @@
 
 .instaIcon:hover {
   transform: rotate(360deg);
-  background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #d62976;
 }
