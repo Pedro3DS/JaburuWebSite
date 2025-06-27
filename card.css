@@ -29,19 +29,19 @@
 
 
 #gabiPic{
-    background-image: url(Images/Gabi.jpeg);
+    background-image: url(./Images/Gabi.jpeg);
 }
 #nathanPic{
-    background-image: url(Images/Nathan.jpeg);
+    background-image: url(./Images/Nathan.jpeg);
 }
 #pedroPic{
-    background-image: url(Images/Pedro.webp);
+    background-image: url(./Images/Pedro.webp);
 }
 #alexPic{
-    background-image: url(Images/Alex.jpeg);
+    background-image: url(./Images/Alex.jpeg);
 }
 #chorinhoPic{
-    background-image: url(Images/Chorinho.jpg);
+    background-image: url(./Images/Chorinho.jpg);
 }
 
 
