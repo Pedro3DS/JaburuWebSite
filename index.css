@@ -3,13 +3,24 @@
 * {
     font-family: "Montserrat", sans-serif;
     color: white;
+    
+    
 }
-
-body, main, html{
+body, main, html, footer{
     background:  #004988;
+    overflow-x: hidden;
+}
+/* body, html{
+    overflow-x: hidden;
+} */
+@font-face {
+  font-family: 'PixelFont'; /* nome que você vai usar no CSS */
+  src: url('fonts/FontPixel.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 .gameName{
-    font-family: pixelfont;
+    font-family: PixelFont;
 }
 
 #logo {
@@ -23,7 +34,7 @@ body, main, html{
 }
 
 .footerName {
-    font-family: pixelfont;
+    font-family: PixelFont;
 }
 
 .effectH1 {
