@@ -1,0 +1,30 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* background-color: transparent; */
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+.bgVideo {
+  pointer-events: none; /* evita cliques sobre o vídeo */
+}
+
+.blurBackground{
+    /* From https://css.glass */
+    background: rgba(28, 28, 28, 0.52);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.6px);
+    -webkit-backdrop-filter: blur(10.6px);
+}
+
+.strongBlurBackground{
+    /* From https://css.glass */
+    background: rgba(28, 28, 28, 0.92);
+    border-radius: 16px 16px 0px 0px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.9px);
+    -webkit-backdrop-filter: blur(12.9px);
+}

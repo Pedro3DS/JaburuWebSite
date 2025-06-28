@@ -1,306 +1,531 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaburu Tech</title>
-    <link rel="icon" type="image/x-icon" href="Images/JaburuTech_logo_scaled_10x_pngcrushed.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Exemplo de página HTML com meta tags bem configuradas." />
+  <meta name="keywords" content="Capial, Capial Game Studio, Studio, Indie, Indie Games, Games, Game Dev, Dev" />
+  <meta name="author" content="Capial Game Studio" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Security-Policy"
+    content="frame-src https://www.youtube.com https://www.youtube.com/embed/;">
 
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./card.css">
 
+  <title>Capial Game Studio</title>
+  <link rel="icon" href="/public/Icon-removebg-preview.png" type="image/x-icon" />
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/header.css">
+  <link rel="stylesheet" href="./src/css/main.css">
+  <link rel="stylesheet" href="./src/css/footer.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
-    <main class="container-fluid">
-        <div class="container ">
-            <div class="row mt-2">
-                <div class="d-flex justify-content-start align-items-center">
-                    <img src="Images/JaburuTech_logo_scaled_10x_pngcrushed.png" alt="" class="img-fluid" id="logo">
-                    <h1 class="ms-5 gameName fs-1">Jaburu Tech</h1>
+  <header>
+    <div class="vh-100 d-flex flex-column justify-content-end">
 
-                </div>
-                <div class="d-flex mt-3">
-                    <div class="effectH1 mx-2"></div>
+      <!-- Background Video -->
+      <video autoplay muted loop class="position-fixed top-0 start-0 w-100 h-100 object-fit-cover z-0">
+        <source src="./public/Videos/BgVideo.mp4" type="video/mp4" />
+      </video>
 
-                </div>
-            </div>
-
-        </div>
-        <div class="container mt-5 infosContainer">
-            <div class="row mt-5">
-                <div class="col-12">
-                    <h2>Sobre Nós</h2>
-                    <p>
-                        Somos estudantes do curso de Programação de Jogos Digitais do Senac Hub Academy, em Campo
-                        Grande/MS, e estamos participando do programa Mobiliza do Liga Jovem. Nossa equipe é formada por
-                        desenvolvedores apaixonados por criar experiências únicas no mundo dos games. Já participamos de
-                        outra edição com um projeto anterior e, desta vez, estamos preparando algo ainda mais especial!
-                        Nosso novo projeto está em desenvolvimento e será revelado em breve! Nosso mentor, Maurício De
-                        Souza Estevam, tem nos acompanhado de perto, guiando cada
-                        etapa dessa jornada incrível.
-                    </p>
-
-                </div>
-
-            </div>
-            <div class="row mt-5">
-                <div class="col-12">
-                    <h2>Projeto</h2>
-                    <p>Em Breve ...</p>
-                </div>
-
-            </div>
-            <div class="row"></div>
-        </div>
-        <div class="container mt-5">
-            <div class="row ">
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <h2>Time</h2>
-                </div>
-            </div>
-
-            <!-- <div class="shapes">
-                <div class="triangle">
-                    <svg fill="#000000" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
-                        version="1.1" viewBox="0 0 512 512" height="80px" width="80px">
-                        <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
-                        <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <title>triangle-filled</title>
-                            <g fill-rule="evenodd" fill="none" stroke-width="1" stroke="none" id="Page-1">
-                                <g transform="translate(32.000000, 42.666667)" fill="#27b4be" id="drop">
-                                    <path id="Combined-Shape"
-                                        d="M246.312928,5.62892705 C252.927596,9.40873724 258.409564,14.8907053 262.189374,21.5053731 L444.667042,340.84129 C456.358134,361.300701 449.250007,387.363834 428.790595,399.054926 C422.34376,402.738832 415.04715,404.676552 407.622001,404.676552 L42.6666667,404.676552 C19.1025173,404.676552 7.10542736e-15,385.574034 7.10542736e-15,362.009885 C7.10542736e-15,354.584736 1.93772021,347.288125 5.62162594,340.84129 L188.099293,21.5053731 C199.790385,1.04596203 225.853517,-6.06216498 246.312928,5.62892705 Z">
-                                    </path>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-                <div class="triangle2">
-                    <svg fill="#000000" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
-                        version="1.1" viewBox="0 0 512 512" height="80px" width="80px">
-                        <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
-                        <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <title>triangle-filled</title>
-                            <g fill-rule="evenodd" fill="none" stroke-width="1" stroke="none" id="Page-1">
-                                <g transform="translate(32.000000, 42.666667)" fill="#27b4be" id="drop">
-                                    <path id="Combined-Shape"
-                                        d="M246.312928,5.62892705 C252.927596,9.40873724 258.409564,14.8907053 262.189374,21.5053731 L444.667042,340.84129 C456.358134,361.300701 449.250007,387.363834 428.790595,399.054926 C422.34376,402.738832 415.04715,404.676552 407.622001,404.676552 L42.6666667,404.676552 C19.1025173,404.676552 7.10542736e-15,385.574034 7.10542736e-15,362.009885 C7.10542736e-15,354.584736 1.93772021,347.288125 5.62162594,340.84129 L188.099293,21.5053731 C199.790385,1.04596203 225.853517,-6.06216498 246.312928,5.62892705 Z">
-                                    </path>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-                <div class="triangle3">
-                    <svg fill="#000000" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
-                        version="1.1" viewBox="0 0 512 512" height="80px" width="80px">
-                        <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
-                        <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <title>triangle-filled</title>
-                            <g fill-rule="evenodd" fill="none" stroke-width="1" stroke="none" id="Page-1">
-                                <g transform="translate(32.000000, 42.666667)" fill="#27b4be" id="drop">
-                                    <path id="Combined-Shape"
-                                        d="M246.312928,5.62892705 C252.927596,9.40873724 258.409564,14.8907053 262.189374,21.5053731 L444.667042,340.84129 C456.358134,361.300701 449.250007,387.363834 428.790595,399.054926 C422.34376,402.738832 415.04715,404.676552 407.622001,404.676552 L42.6666667,404.676552 C19.1025173,404.676552 7.10542736e-15,385.574034 7.10542736e-15,362.009885 C7.10542736e-15,354.584736 1.93772021,347.288125 5.62162594,340.84129 L188.099293,21.5053731 C199.790385,1.04596203 225.853517,-6.06216498 246.312928,5.62892705 Z">
-                                    </path>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-                <div class="circle"></div>
-                <div class="circle2"></div>
-                <div class="circle3"></div>
-                <div class="square"></div>
-                <div class="square2"></div>
-                <div class="square3"></div>
-                <div class="square4"></div>
-            </div> -->
-
-            <div class="row row-cols-1 row-cols-md-3 g-4 row-team">
-                <div class="col border-0">
-
-                    <div class="card h-100 bg-transparent border-0">
-                        <div class="transparentBg">
-                            <div class="teamImg d-flex justify-content-center align-items-center my-3">
-                                <!-- <img src="Images/Mauricio.jpg" class="rounded-circle team-img " alt="..." > -->
-                                <div class="team-img" id="mauricioPic"></div>
-
-                            </div>
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div class="col-9">
-
-                                    <h5 class="card-title">Mauricio De Souza Estevam</h5>
-                                    <p class="card-text ">Mentor</p>
-                                </div>
-                                <div class="col-3 d-flex justify-content-center align-items-center">
-                                    <a href="https://www.instagram.com/mauriiciosouza/">
-                                        <i class="bi bi-instagram fs-1 instaIcon"></i>
-
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col border-0">
-
-                    <div class="card h-100 bg-transparent border-0">
-                        <div class="transparentBg">
-                            <div class="teamImg d-flex justify-content-center align-items-center my-3">
-                                <!-- <img src="Images/Mauricio.jpg" class="rounded-circle team-img " alt="..." > -->
-                                <div class="team-img " id="pedroPic"></div>
-
-                            </div>
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div class="col-9">
-
-                                    <h5 class="card-title">Pedro Diniz Santana</h5>
-                                    <p class="card-text ">Programação</p>
-                                </div>
-                                <div class="col-3 d-flex justify-content-center align-items-center">
-                                    <a href="https://www.instagram.com/pedro_3ds/">
-                                        <i class="bi bi-instagram fs-1 instaIcon"></i>
-
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col border-0">
-
-                    <div class="card h-100 bg-transparent border-0">
-                        <div class="transparentBg">
-                            <div class="teamImg d-flex justify-content-center align-items-center my-3">
-                                <!-- <img src="Images/Mauricio.jpg" class="rounded-circle team-img " alt="..." > -->
-                                <div class="team-img" id="gabiPic"></div>
-
-                            </div>
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div class="col-9">
-
-                                    <h5 class="card-title">Gabrieli Henrique</h5>
-                                    <p class="card-text ">Gestão</p>
-                                </div>
-                                <div class="col-3 d-flex justify-content-center align-items-center">
-                                    <a href="https://www.instagram.com/gabrieli.olive/">
-                                        <i class="bi bi-instagram fs-1 instaIcon"></i>
-
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col border-0">
-
-                    <div class="card h-100 bg-transparent border-0">
-                        <div class="transparentBg">
-                            <div class="teamImg d-flex justify-content-center align-items-center my-3">
-                                <!-- <img src="Images/Mauricio.jpg" class="rounded-circle team-img " alt="..." > -->
-                                <div class="team-img" id="chorinhoPic"></div>
-
-                            </div>
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div class="col-9">
-
-                                    <h5 class="card-title">Herickson Moacyr</h5>
-                                    <p class="card-text ">Música</p>
-                                </div>
-                                <div class="col-3 d-flex justify-content-center align-items-center">
-                                    <a href="https://www.instagram.com/herickson1503festi/">
-                                        <i class="bi bi-instagram fs-1 instaIcon"></i>
-
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col border-0">
-
-                    <div class="card h-100 bg-transparent border-0">
-                        <div class="transparentBg">
-                            <div class="teamImg d-flex justify-content-center align-items-center my-3">
-                                <!-- <img src="Images/Mauricio.jpg" class="rounded-circle team-img " alt="..." > -->
-                                <div class="team-img" id="nathanPic"></div>
-
-                            </div>
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div class="col-9">
-
-                                    <h5 class="card-title">Nathan Alexander</h5>
-                                    <p class="card-text ">Arte</p>
-                                </div>
-                                <div class="col-3 d-flex justify-content-center align-items-center">
-                                    <a href="https://www.instagram.com/nathanalexsander69/">
-                                        <i class="bi bi-instagram fs-1 instaIcon"></i>
-
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col border-0">
-
-                    <div class="card h-100 bg-transparent border-0">
-                        <div class="transparentBg">
-                            <div class="teamImg d-flex justify-content-center align-items-center my-3">
-                                <!-- <img src="Images/Mauricio.jpg" class="rounded-circle team-img " alt="..." > -->
-                                <div class="team-img" id="alexPic"></div>
-
-                            </div>
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div class="col-9">
-
-                                    <h5 class="card-title">Alex Câmara</h5>
-                                    <p class="card-text ">Gestão</p>
-                                </div>
-                                <div class="col-3 d-flex justify-content-center align-items-center">
-                                    <a href="https://www.instagram.com/alexcamara3/">
-                                        <i class="bi bi-instagram fs-1 instaIcon"></i>
-
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-    </main>
-    <footer>
+      <!-- Primeira barra (ex: header content) -->
+      <div class="container-fluid header-content w-100 py-5 z-3 m-0">
         <div class="container">
-            <div class="row mt-5">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-3 col-md-1 d-md-flex justify-content-end align-items-center order-2 order-md-1">
+              <img src="./public/Icon-cut.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-9 col-md-10 order-1 order-md-2 justify-content-start align-items-center">
+              <div class="d-flex justify-content-start align-items-center">
+                <!-- <h1 id="typed-text" class="text-white fw-bold">WELCOME</h1> -->
+                <h1 class="text-white fs-1 fw-bold"><span id="typed-text" class="typed-text"></span></h1>
 
-                <div class="col-12 d-flex justify-content-center">
-                    <h2>© JaburuTech 2025</h2>
+              </div>
 
-                </div>
+              <p class="text-white fw-bold"><span id="typed-text2"></span> Capial Indie Game Studio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Segunda barra (ex: navbar) -->
+      <nav id="navbar" class="navbar navbar-expand-lg w-100 header-content text-white p-0 py-5 p-md-0 z-3 m-0"
+        data-bs-theme="dark">
+        <div class="container-fluid justify-content-center align-items-center position-relative ">
+          <button class="navbar-toggler border-0 justify-content-center" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center align-items-center m-0 p-0 h-0"
+            id="navbarNavAltMarkup">
+            <div class="navbar-nav text-center">
+              <li><a class="nav-link" id="language-sobre" href="#aboutUs">Sobre Nós</a></li>
+              <!-- <a class="nav-link " href="#portifolio">Projetos</a> -->
+              <li class="nav-item dropup" id="dropProjects">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false" id="language-projeto">Projetos</a>
+                <ul class="dropdown-menu z-1">
+                  <li><a class="dropdown-item" href="./src/pages/gateball.html">Gateball</a></li>
+                  <li><a class="dropdown-item" href="./src/pages/cerrado.html">Cerrado Vivo</a></li>
+                  <li><a class="dropdown-item" href="./src/pages/pantanal.html">Pantanal Code</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#portifolio" id="language-projeto-dropdown">Projetos</a></li>
+                </ul>
+              </li>
+              <li><a class="nav-link active d-none d-md-block z-3" aria-current="page" href="#"><img
+                    src="./public/Favicon-removebg-preview.png" alt="" class="logo-home z-3"></a></li>
+              <a class="nav-link active d-block d-md-none" aria-current="page" href="#">Home</a>
+              <li><a class="nav-link" id="language-equipe" href="#team">Equipe</a></li>
+              <li><a class="nav-link" id="language-contato" href="#contact">Contato</a></li>
+            </div>
+            <div
+              class="d-block d-md-none btn-language d-flex justify-content-center">
+              <img src="./public/icon-language/brasil.png" alt="" id="pt" class="me-1">
+              <img src="./public/icon-language/estados-unidos.png" alt="" id="en" class="ms-1">
+            </div>
+          </div>
+          </div>
+          <div class="d-none d-md-block position-absolute end-0 me-5">
+            <div class="d-flex justify-content-center align-items-center">
+              <img src="./public/icon-language/brasil.png" alt="" id="pt" class="language-btn" style="height: 30px;">
+              <img src="./public/icon-language/estados-unidos.png" alt="" id="en" class="language-btn ms-3"
+                style="height: 30px;">
 
             </div>
-        </div>
-    </footer>
+          </div>
+      </nav>
 
+    </div>
+  </header>
+  <div id="nav-trigger" class="m-0 p-0"></div>
+
+
+  <main data-bs-spy="scroll" data-bs-target="#navbar-example2 ">
+    <!-- About Us -->
+    <div class="container-fluid about-us" id="aboutUs">
+      <div class="container">
+        <div class="row pt-3 justify-content-center">
+          <div class="col-12 col-md-11">
+
+            <h1 class="about-us-text text-center text-md-start" id="language-sobre-title">SOBRE NÓS</h1>
+          </div>
+        </div>
+        <div class="row py-0 py-md-5 ">
+          <div class="col d-flex justify-content-center align-items-center">
+            <div class="imageLogo"></div>
+            <!-- <img src="./public/CapialLogo.jpeg" alt="" class="img-fluid rounded-circle object-fit-cover"> -->
+          </div>
+          <div class="col d-flex justify-content-center align-items-center">
+            <div>
+              <p id="texto-sobre-p1">A Capial Games é um estúdio indie de desenvolvimento de jogos do Mato Grosso do
+                Sul, fundado por
+                Mauricio de Souza e Gabriel Ferreira Medeiros. Com uma equipe multidisciplinar, o estúdio cria jogos
+                educacionais e culturais que valorizam a identidade regional. </p>
+              <p id="texto-sobre-p2">Apesar das dificuldades de se trabalhar com desenvolvimento de jogos em cidades
+                mais interioranas e
+                tradicionais como a nossa, o estúdio Capial tem ganhado espaço em editais e oportunidades que vêm
+                surgindo no estado do agro! </p>
+              <p id="texto-sobre-p3">A Capial Games une inovação, educação e cultura para transformar o cenário dos
+                games no Brasil. Nosso
+                objetivo é preservar e divulgar as várias facetas da diversidade cultural do Brasil, não só para o
+                brasileiro mas também para todo o mundo!</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portifolio -->
+
+    <div class="container-fluid portifolio" id="portifolio">
+      <div class="container">
+        <div class="row pt-5">
+          <h1 class="portifolio-text text-center" id="language-projeto-title">PROJETOS</h1>
+        </div>
+        <div class="row py-5 justify-content-center">
+          <!-- <div class="col-12 col-md-8">
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false">
+              <div class="carousel-indicators carousel-indicator">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+
+                <div class="carousel-item active" data-bs-interval="9000">
+
+                  <a href="./src/pages/gateball.html"><img src="./public/Gateball.jpeg" alt="" class="img-fluid"></a>
+                  <div class="carousel-caption z-2 text-light d-none d-md-block carousel-indicator">
+                    <h5>Gateball</h5>
+                  </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="9000">
+                  <a href="./src/pages/pantanal.html"><img src="./public/PantanalCode.jpeg" alt=""
+                      class="img-fluid"></a>
+                  <div class="carousel-caption z-2 text-light d-none d-md-block carousel-indicator">
+                    <h5>Pantanal Code</h5>
+                  </div>
+                </div>
+
+                <div class="carousel-item " data-bs-interval="9000">
+                  <a href="./src/pages/cerrado.html"><img src="./public/CerradoVivo.jpeg" alt="" class="img-fluid"></a>
+                  <div class="carousel-caption z-2 text-light d-none d-md-block carousel-indicator">
+                    <h5>Cerrado Vivo</h5>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon carousel-indicator" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon carousel-indicator" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+          </div> -->
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <a href="./src/pages/cerrado.html" style="text-decoration: none;">
+
+                  <div class="card-project card-cerrado">
+                    <!-- <img src="./public/CerradoVivo.jpeg" class="card-img-top" alt="..."> -->
+                    <div class="project-img d-none d-md-block"></div>
+                    <div class="card-project-content">
+                      <p class="card-project-title">Cerrado Vivo
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="./src/pages/gateball.html" style="text-decoration: none;">
+                  <div class="card-project card-gate">
+                    <!-- <img src="./public/CerradoVivo.jpeg" class="card-img-top" alt="..."> -->
+                    <div class="project-img d-none d-md-block"></div>
+                    <div class="card-project-content">
+                      <p class="card-project-title">Gateball
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="./src/pages/pantanal.html" style="text-decoration: none;">
+
+                  <div class="card-project card-pantanal">
+                    <!-- <img src="./public/CerradoVivo.jpeg" class="card-img-top" alt="..."> -->
+                    <div class="project-img d-none d-md-block"></div>
+                    <div class="card-project-content">
+                      <p class="card-project-title">Pantanal Code
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Equipe -->
+    <div class="container-fluid portifolio team" id="team">
+      <div class="container">
+        <div class="row pt-1 justify-content-center align-items-center">
+          <div class="col-4 d-none d-md-block">
+            <h1 class="about-us-text" id="language-equipe-title-p1">E</h1>
+            <h1 class="about-us-text" id="language-equipe-title-p2">QUI</h1>
+            <h1 class="about-us-text" id="language-equipe-title-p3">PE</h1>
+          </div>
+          <div class="col-12 d-block d-md-none">
+            <h1 class="team-text text-center">EQUIPE</h1>
+          </div>
+          <div class="col-12 col-md-8 justify-content-center">
+            <div class="horizontal-scroll d-flex gap-3 overflow-auto py-3 ">
+              <!-- Cards -->
+              <!-- Mauricio -->
+              <div class="card team-card">
+                <div class="profile-container">
+                  <img src="./public/mauricio.jpg" alt="Foto do Usuário" class="profile-image" />
+                  <a href="https://www.instagram.com/mauriiciosouza/" target="_blank" class="overlay">
+                    <img src="./public/icons8-instagram-512.png" alt="Instagram" class="instagram-logo" />
+                    <span class="username" aria-valuetext="mauriiciosouza"></span>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Mauricio de Souza Estevam</h5>
+                  <p class="card-text" id="language-cargo-mauricio">CEO & TECH LEAD</p>
+                  <p class="card-text" id="language-descricao-mauricio">Mauricio de Souza Estevam é um programador e
+                    especialista em game design com
+                    vasta experiência no desenvolvimento de soluções tecnológicas inovadoras. Como fundador da Capial,
+                    lidera projetos que integram criatividade e excelência técnica. Professor de jogos digitais,
+                    Mauricio combina sua paixão por jogos com um compromisso em formar talentos e impulsionar o setor,
+                    entregando resultados de alto impacto.</p>
+                </div>
+              </div>
+
+              <!-- Gabriel Medeiros -->
+              <div class="card team-card">
+                <div class="profile-container">
+                  <img src="./public/gabriel.jpg" alt="Foto do Usuário" class="profile-image" />
+                  <a href="https://www.instagram.com/biel_dc/" target="_blank" class="overlay">
+                    <img src="./public/icons8-instagram-512.png" alt="Instagram" class="instagram-logo" />
+                    <span class="username" aria-valuetext="biel_dc"></span>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Gabriel Medeiros</h5>
+                  <p class="card-text" id="language-cargo-gabriel">Artista 3D Sênior e Diretor de Arte</p>
+                  <p class="card-text" id="language-descricao-gabriel">Gabriel Medeiros é um profissional multifacetado
+                    com expertise em design gráfico,
+                    interfaces e ambientes. Especialista em VFX, combina criatividade e precisão técnica para criar
+                    visuais impactantes. Como professor, compartilha seu conhecimento, inspirando novos talentos. Sua
+                    liderança em projetos artísticos eleva padrões visuais, entregando experiências imersivas e
+                    inovadoras no mercado digital.</p>
+                </div>
+              </div>
+
+              <!-- Pedro -->
+              <div class="card team-card">
+                <div class="profile-container">
+                  <img src="./public/pedro.webp" alt="Foto do Usuário" class="profile-image" />
+                  <a href="https://www.instagram.com/pedro_3ds/" target="_blank" class="overlay">
+                    <img src="./public/icons8-instagram-512.png" alt="Instagram" class="instagram-logo" />
+                    <span class="username" aria-valuetext="pedro_3ds"></span>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Pedro Diniz</h5>
+                  <p class="card-text" id="language-cargo-pedro">Desenvolvedor Multiplataforma e Web Full Stack</p>
+                  <p class="card-text" id="language-descricao-pedro">Pedro Diniz Santana é um programador versátil com
+                    expertise em Unity e
+                    desenvolvimento de soluções digitais. Sua habilidade em criar sistemas robustos para web e jogos
+                    garante projetos integrados e de alta performance. Com um perfil técnico e inovador, Pedro entrega
+                    resultados consistentes, impulsionando a qualidade e a funcionalidade em ambientes tecnológicos
+                    diversos.</p>
+                </div>
+              </div>
+
+              <div class="card team-card">
+                <div class="profile-container">
+                  <img src="./public/felipe.jpeg" alt="Foto do Usuário" class="profile-image" />
+                  <a href="https://www.instagram.com/felipe_dozaa/" target="_blank" class="overlay">
+                    <img src="./public/icons8-instagram-512.png" alt="Instagram" class="instagram-logo" />
+                    <span class="username" aria-valuetext="felipe_dozaa"></span>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Felipe Dôza</h5>
+                  <p class="card-text" id="language-cargo-felipe">Artista Conceitual e Ilustrador de Jogos</p>
+                  <p class="card-text" id="language-descricao-felipe">Felipe Dôza é especializado em design de cenários,
+                    efeitos visuais e HUD, com
+                    foco na experiência do jogador. Sua habilidade em criar visuais envolventes e funcionais eleva a
+                    narrativa e a imersão em projetos digitais. Combinando criatividade e expertise técnica, Felipe
+                    entrega designs inovadores que enriquecem a estética e a jogabilidade no universo dos games.</p>
+                </div>
+              </div>
+
+              <div class="card team-card">
+                <div class="profile-container">
+                  <img src="./public/barba.webp" alt="Foto do Usuário" class="profile-image" />
+                  <a href="https://www.instagram.com/gabarberiz/" target="_blank" class="overlay">
+                    <img src="./public/icons8-instagram-512.png" alt="Instagram" class="instagram-logo" />
+                    <span class="username" aria-valuetext="gabarberiz"></span>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Gabriel Barberiz</h5>
+                  <p class="card-text" id="language-cargo-gabrielBarberiz">Programador e Desenvolvedor Unity</p>
+                  <p class="card-text" id="language-descricao-gabrielBarberiz">Gabriel Barberiz é especializado em
+                    realidade virtual, realidade aumentada e
+                    programação de gameplay. Com um enfoque técnico e criativo, ele constrói experiências interativas
+                    imersivas, otimizando mecânicas e funcionalidades. Sua expertise em desenvolvimento de jogos garante
+                    soluções robustas e inovadoras, contribuindo para projetos de alto impacto no setor de tecnologia e
+                    entretenimento digital.</p>
+                </div>
+              </div>
+              <!-- Repita os cards conforme necessário -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div class="container-fluid contact team" id="contact">
+      <div class="container">
+        <div class="row pt-3">
+          <h1 class="contact-text text-center" id="language-contato-title">CONTATO</h1>
+        </div>
+        <div class="row   justify-content-center">
+          <div class="col-10 border border-black">
+
+            <form class="row g-3 justify-content-center py-5">
+              <div class="col-10">
+                <h1 class="fs-2 text-dark text-center" id="language-contato-desc">FORMULÁRIO PARA CONTATO</h1>
+              </div>
+              <div class="form-floating mb-2 col-10">
+                <input type="email" class="form-control" id="floatingInput" placeholder="Name">
+                <label for="floatingInput" id="language-inp-name">Nome Completo</label>
+              </div>
+              <div class="form-floating mb-2 col-10">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" id="language-inp-email">Email</label>
+              </div>
+              <div class="form-floating mb-2 col-10">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea" id="language-inp-mensagem">Mensagem</label>
+              </div>
+
+              <div class="col-10">
+                <button type="submit" class="btn btn-dark w-100" id="language-enviar">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row p-5">
+          <div class="col-12 col-md-2 pb-5">
+            <a href="#">
+
+              <img src="./public/Favicon-removebg-preview.png" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-12 col-md-2 d-flex align-items-center">
+            <p>&copy; 2025 Capial Game Studio</p>
+          </div>
+          <div class="col-6 d-block d-md-flex align-items-center justify-content-center">
+            <div>
+              <a href="mailto:capialgames@gmail.com"
+                class="link-light d-flex justify-content-start text-decoration-none"><i class="bi bi-envelope me-2"></i>
+                <p>capialgames@gmail.com</p>
+              </a>
+
+            </div>
+          </div>
+          <div class="col-12 col-md-2 d-block d-md-flex align-items-center ">
+            <div class="row justify-content-center">
+              <div class="col">
+
+                <a href="https://api.whatsapp.com/send?phone=5567996227115" target="_blank"
+                  class="whats-icon d-flex justify-content-start text-decoration-none fs-2" href=""><i
+                    class="bi bi-whatsapp"></i></a>
+              </div>
+              <div class="col">
+
+                <a href="https://www.instagram.com/capialgamestudio/"
+                  class="insta-icon d-flex justify-content-center text-decoration-none fs-2" target="_blank"><i
+                    class="bi bi-instagram"></i></a>
+              </div>
+              <div class="col">
+                <a href="https://www.youtube.com/@CapialGameStudio" target="_blank"
+                  class="youtube-icon d-flex justify-content-end text-decoration-none fs-2" href=""><i
+                    class="bi bi-youtube"></i></a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scroll In Cards -->
+  <script>
+    document.querySelector('.horizontal-scroll').addEventListener('wheel', function (event) {
+      if (event.deltaY !== 0) {
+        event.preventDefault();
+        this.scrollLeft += event.deltaY;
+      }
+    }, { passive: false });
+  </script>
+
+  <!-- Typing Effect Header -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    const a = ["Á", "To", "A", "À"];
+    let b = 0;
+    let typed2Instance = null;
+
+    const typed = new Typed('#typed-text', {
+      strings: ["BEM-VINDO! &#128075;", "WELCOME! &#128075;", "¡BIENVENIDO! &#128075;", "Bienvenue! &#128075;"],
+      typeSpeed: 50,
+      backSpeed: 30,
+      backDelay: 1500,
+      startDelay: 200,
+      loop: true,
+      showCursor: true,
+      cursorChar: '',
+      smartBackspace: true,
+      preStringTyped: function (arrayPos, self) {
+        b = arrayPos;
+
+        startTyped2();
+      },
+    });
+
+    function startTyped2() {
+
+      if (typed2Instance) {
+        typed2Instance.destroy();
+        document.getElementById('typed-text2').innerHTML = '';
+      }
+
+      typed2Instance = new Typed('#typed-text2', {
+        strings: [a[b]],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 0,
+        startDelay: 0,
+        loop: false,
+        cursorChar: '',
+      });
+
+    }
+  </script>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+
+  <!-- Scripts -->
+  <script type="module" src="./src/js/index.js"></script>
+  <script type="module" src="./src/js/header.js"></script>
+  <script src="./src/js/language.js"></script>
 </body>
 
 </html>
