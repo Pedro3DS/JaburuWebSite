@@ -1,7 +1,8 @@
 main {
   position: relative;
-  background-color: #131313;
+  background-color: #3B3A61;
   color: rgb(255, 255, 255);
+  color: #FFFEFD;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -27,11 +28,14 @@ main {
 }
 
 .portifolio {
-  background-color: #1C1C1C;
+  background-color: #FEF3E2;
+  color: #3B3A61;
+  color: #190931;
 }
 
 .team {
-  background-color: #636363;
+  background-color: #262548;
+  color: #FFFEFD;
 }
 
 .about-us-text {
