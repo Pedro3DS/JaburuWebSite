@@ -1,7 +1,7 @@
   header {
     font-family: 'Montserrat', sans-serif;
   }
-  
+
   .header-content {
     color: #1C1C1C;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5));
@@ -10,21 +10,36 @@
     z-index: 2;
   }
 
-  
-  #navbar{
+
+  #navbar {
     background-color: #262548;
   }
 
-.logo-home {
-  height: 70px; /* ajuste conforme necessário */
-  transform: translateY(-45%); /* move para cima */
-  transition: transform 0.3s ease;
-  margin: 0%;
-  padding: 0;
-}
+  .logo-home {
+    height: 70px;
+    /* ajuste conforme necessário */
+    transform: translateY(-45%);
+    /* move para cima */
+    transition: transform 0.3s ease;
+    margin: 0%;
+    padding: 0;
+  }
 
-.navbar-nav .nav-link.active {
-  display: flex;
-  align-items: center;
-  /* justify-content: center; */
-}
+  .navbar-nav .nav-link.active {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+  #back-image {
+    background-image: url(../../public/JaburuTech_Banner_scaled_7x_pngcrushed.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width:700px) {
+    #back-image {
+      background-image: url(../../public/JaburuTech_Logo_nome&logo_scaled_8x_pngcrushed.png);
+    }
+  }
