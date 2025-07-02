@@ -15,7 +15,7 @@ main {
 }
 
 .imageLogo {
-  background-image: url("../../public/JaburuTech_Logo_nome&logo_scaled_8x_pngcrushed.png");
+  background-image: url("../../public/JaburuTech_Logo_nome&logo_scaled_20x_pngcrushed.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -284,6 +284,10 @@ main {
   color: white;
   transition: ease 0.5s all;
 }
+.tiktok-icon {
+  color: white;
+  transition: ease 0.5s all;
+}
 
 .whats-icon:hover {
   transform: translateY(-3%);
@@ -298,6 +302,10 @@ main {
 .insta-icon:hover {
   transform: translateY(-3%);
   color: #DD2A7B;
+}
+.tiktok-icon:hover {
+  transform: translateY(-3%);
+  color: 		#040404;
 }
 
 @media (max-width:767px) {
